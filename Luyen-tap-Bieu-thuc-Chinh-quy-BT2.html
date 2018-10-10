@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT2</title>
+</head>
+<body>
+    <script>
+        function validDate(str) {
+            var regexp = /[ ]/g;
+            var text = str.trim()
+            var result = text.match(regexp);
+            console.log('Chuỗi nhập vào có ' + (result.length + 1) + ' từ');
+        }
+        var str = 'Biểu thức chính quy';
+        validDate(str);
+    </script>
+</body>
+</html>

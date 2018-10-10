@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT3</title>
+</head>
+<body>
+    <script>
+        function getConsonant(str) {
+            var regexp = /[ueoai]/ig;
+            var result = str.match(regexp);
+            console.log('Chuỗi nhập vào có ' + (result.length) + ' nguyên âm');
+        }
+        function getVowel(str) {
+            var regexp = /[^ueoai ]/g;
+            var result = str.match(regexp);
+            console.log('Chuỗi nhập vào có ' + (result.length) + ' phụ âm');
+        }
+
+        var str = 'Bieu thuc chinh quy';
+        getConsonant(str);
+        getVowel(str);
+    </script>
+</body>
+</html>

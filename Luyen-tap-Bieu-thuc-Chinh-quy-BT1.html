@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT1</title>
+</head>
+<body>
+    <script>
+        function validDate(str) {
+            var regexp = /^[0-3][0-9][/]{1}[01][0-9][/]{1}[0-9]{4}$/;
+            if (regexp.test(str)) {
+                console.log('Valid');
+            } else
+                console.log('Not Valid');
+        }
+        var str = '30/12/2008';
+        validDate(str);
+        var str = '4a/0_/20@8';
+        validDate(str);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+    <script>
+        function validPassword(str) {
+            var regexp = /^[a-zA-Z0-9]{8,}$/;
+            if (regexp.test(str)){
+                console.log('Valid');
+            } else
+                console.log('Not Valid');
+        }
+        var str = '1aa567888';
+        validPassword(str);
+    </script>
+</body>
+</html>
